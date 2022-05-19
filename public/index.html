@@ -48,7 +48,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      const socket = io('http://localhost:8080');
+      const APP_URL = 'https://react-socket-server-lugo.herokuapp.com/';
+      const socket = io(APP_URL);
       const formulario = document.getElementById('formulario');
       const mensajes = document.getElementById('mensajes');
       const mensaje = document.getElementById('mensaje');
